@@ -1,4 +1,4 @@
 window.FANMIAN_CONFIG = Object.freeze({
-  appStoreUrl: "",
+  appStoreUrl: "https://testflight.apple.com/join/N2PA4kYJ",
   androidStoreUrl: "",
 });
