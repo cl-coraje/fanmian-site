@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#171914" />
+    <meta name="description" content="接下朋友发来的翻面挑战，适时结束短视频滑动。" />
+    <meta property="og:title" content="有人邀请你一起翻面" />
+    <meta property="og:description" content="短视频不会主动结束，但你可以。" />
+    <title>翻面挑战 · FLIP</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js" defer></script>
+    <script src="challenge.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span>翻面 FLIP</span>
+        <span aria-hidden="true">↘</span>
+      </header>
+
+      <section class="hero" aria-labelledby="challenge-title">
+        <p class="eyebrow">朋友发来一张停下来的邀请</p>
+        <h1 id="challenge-title">一起把这一轮<br />主动结束。</h1>
+        <div class="challenge-card">
+          <div>
+            <strong id="threshold">25</strong>
+            <span>分钟后</span>
+          </div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div>
+            <strong id="break-seconds">60</strong>
+            <span>秒翻面</span>
+          </div>
+        </div>
+        <p class="explanation">
+          达到设定时间后，把手机屏幕朝下放一会儿。没有训诫，也不读取你看了什么。
+        </p>
+      </section>
+
+      <section class="actions" aria-label="接下挑战">
+        <a id="open-app" class="primary" href="#">在翻面中接下挑战</a>
+        <button id="share-link" class="secondary" type="button">把挑战继续传下去</button>
+        <div id="install-fallback" class="install-fallback" hidden>
+          <p>还没有安装翻面？安装后再次打开这条链接。</p>
+          <div class="store-links">
+            <a id="ios-store" href="#" hidden>iPhone 版</a>
+            <a id="android-store" href="#" hidden>Android 版</a>
+          </div>
+          <p id="testing-note" class="testing-note">当前为内测版本，请向邀请人获取安装包。</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>链接只携带挑战分钟数和翻面秒数，不包含身份、应用列表或使用记录。</p>
+        <nav class="footer-links" aria-label="网站信息">
+          <a href="privacy.html">隐私政策</a>
+          <a href="support.html">测试帮助</a>
+        </nav>
+      </footer>
+    </main>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
